@@ -1,0 +1,24 @@
+.fullScreenContainer {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    
+}
+.fullScreenImage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    /*Those 4 lines prevent the background image beeing cut of when scrolling up and down on iOS-Devices*/
+    -webkit-transform: translate3d(0, 0, 0);
+   -moz-transform: translate3d(0, 0, 0);
+   -ms-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0);
+}

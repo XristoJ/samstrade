@@ -1,0 +1,28 @@
+/*CSS Code to style the scroll-bar. Depending on the browser, there are different styles
+  THe code was taken from the following source:
+        https://www.digitalocean.com/community/tutorials/css-scrollbars
+*/
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  /*Der erste Wert ist für den Scroll Balken, der zweite Wert für die Scroll-Leiste*/
+  scrollbar-color: rgb(128, 128, 128) rgba(0, 0, 0, 0.3);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  /*The width property defines how thick the vetical scroll bar is*/
+  width: 5px;
+  /*The height property defines how thick the horizontal scroll bar is*/
+  height: 5px;
+}
+/*Style für die Scroll-Leiste*/
+*::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+}
+/*Style für den Scoll-Balken*/
+*::-webkit-scrollbar-thumb {
+  background-color:rgb(128, 128, 128);
+  border-radius: 20px;
+  border: 3px solid rgba(0, 0, 0, 0.3);
+}
